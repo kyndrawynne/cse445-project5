@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Staff>
+  <StaffMember>
+    <Username>TA</Username>
+    <Password>hashed-password-for-TA</Password>
+    <!-- Additional staff-specific fields -->
+  </StaffMember>
+  <!-- Additional StaffMember elements as needed -->
+</Staff>
+
+<!-- replace "hashed-password-goes-here" and "hashed-password-for-TA"
+with actual hashed passwords later, once implemented hashing in encryption service is done-->

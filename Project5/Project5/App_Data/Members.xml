@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Members>
+  <Member>
+    <Username>user1</Username>
+    <Password>hashed-password-goes-here</Password>
+    <!-- Add more member-specific fields here -->
+  </Member>
+  <!-- Add more Member elements as needed -->
+</Members>
+
