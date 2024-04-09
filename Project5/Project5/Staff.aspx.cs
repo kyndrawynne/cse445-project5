@@ -13,5 +13,22 @@ namespace Project5
         {
 
         }
+
+        protected void btnUserAnalytics_Click(object sender, EventArgs e)
+        {
+            // Placeholder
+        }
+
+        protected void btnContentManagement_Click(object sender, EventArgs e)
+        {
+            // Placeholder
+        }
+
+        protected void btnLogOut_Click(object sender, EventArgs e)
+        {
+            // Log out the user and clear the session
+            Session.Abandon();
+            Response.Redirect("Default.aspx");
+        }
     }
 }

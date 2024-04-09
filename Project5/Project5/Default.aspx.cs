@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Threading.Tasks;
+using System.Text;
 
 namespace Project5
 {
@@ -11,7 +13,26 @@ namespace Project5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lbl_currentTime.Text = Global.currentTime;
         }
+
+        protected void btnMemberPage_Click(object sender, EventArgs e)
+        {
+            // Redirect to Member page
+            Response.Redirect("~/MemberLogin.aspx");
+        }
+
+        protected void btnStaffPage_Click(object sender, EventArgs e)
+        {
+            // Redirect to Staff page
+            Response.Redirect("~/StaffLogin.aspx");
+        }
+
+        protected void btnSignup_Click(object sender, EventArgs e)
+        {
+            // Redirect to the Signup page
+            Response.Redirect("~/Signup.aspx");
+        }
+
     }
 }

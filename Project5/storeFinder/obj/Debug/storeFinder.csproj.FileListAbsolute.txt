@@ -1,0 +1,13 @@
+C:\Users\dmartin\source\repos\cse445-project5\Project5\storeFinder\bin\storeFinder.dll.config
+C:\Users\dmartin\source\repos\cse445-project5\Project5\storeFinder\bin\storeFinder.dll
+C:\Users\dmartin\source\repos\cse445-project5\Project5\storeFinder\bin\storeFinder.pdb
+C:\Users\dmartin\source\repos\cse445-project5\Project5\storeFinder\bin\Newtonsoft.Json.dll
+C:\Users\dmartin\source\repos\cse445-project5\Project5\storeFinder\bin\Newtonsoft.Json.xml
+C:\Users\dmartin\source\repos\cse445-project5\Project5\storeFinder\obj\Debug\storeFinder.csproj.AssemblyReference.cache
+C:\Users\dmartin\source\repos\cse445-project5\Project5\storeFinder\obj\Debug\storeFinder.csproj.CoreCompileInputs.cache
+C:\Users\dmartin\source\repos\cse445-project5\Project5\storeFinder\obj\Debug\storeFinder.csproj.CopyComplete
+C:\Users\dmartin\source\repos\cse445-project5\Project5\storeFinder\obj\Debug\storeFinder.dll
+C:\Users\dmartin\source\repos\cse445-project5\Project5\storeFinder\obj\Debug\storeFinder.pdb
+C:\Users\dmartin\source\repos\cse445-project5\Project5\storeFinder\bin\System.Drawing.Common.dll
+C:\Users\dmartin\source\repos\cse445-project5\Project5\storeFinder\bin\System.Drawing.Common.pdb
+C:\Users\dmartin\source\repos\cse445-project5\Project5\storeFinder\bin\System.Drawing.Common.xml
