@@ -1,0 +1,7 @@
+C:\Users\dmartin\source\repos\cse445-project5\Project5\WcfService1\bin\WcfService1.dll.config
+C:\Users\dmartin\source\repos\cse445-project5\Project5\WcfService1\bin\WcfService1.dll
+C:\Users\dmartin\source\repos\cse445-project5\Project5\WcfService1\bin\WcfService1.pdb
+C:\Users\dmartin\source\repos\cse445-project5\Project5\WcfService1\obj\Debug\WcfService1.csproj.AssemblyReference.cache
+C:\Users\dmartin\source\repos\cse445-project5\Project5\WcfService1\obj\Debug\WcfService1.csproj.CoreCompileInputs.cache
+C:\Users\dmartin\source\repos\cse445-project5\Project5\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\dmartin\source\repos\cse445-project5\Project5\WcfService1\obj\Debug\WcfService1.pdb

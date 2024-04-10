@@ -1,4 +1,7 @@
-﻿using System;
+﻿/* 
+ Code by Alexis Holland
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,16 +15,6 @@ namespace Project5
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void btnUserAnalytics_Click(object sender, EventArgs e)
-        {
-            // Placeholder
-        }
-
-        protected void btnContentManagement_Click(object sender, EventArgs e)
-        {
-            // Placeholder
         }
 
         protected void btnLogOut_Click(object sender, EventArgs e)

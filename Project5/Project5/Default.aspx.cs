@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* 
+ Code by Kyndra Wynne
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;

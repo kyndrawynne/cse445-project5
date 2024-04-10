@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SRVTextToImage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e498449e93e3b581b88bd510bd7bc942890a11c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15f6861a364cdfbdda32baccb469a61542409610")]
 [assembly: System.Reflection.AssemblyProductAttribute("SRVTextToImage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SRVTextToImage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
