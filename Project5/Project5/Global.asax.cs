@@ -27,12 +27,15 @@ namespace Project5
         // Event handler for session start
         protected void Session_Start(object sender, EventArgs e)
         {
+            // Store the start time of the session
+            Session["SessionStartTime"] = DateTime.Now;
+
             // Increment session counter
-            Int32 counter = ((Int32)Application["SessionCounter"]);
-            counter = counter + 1;
-            // Update current time
-            currentTime = DateTime.Now.ToString();
+            Int32 counter = (Int32)(Application["SessionCounter"] ?? 0);
+            counter += 1;
+            Application["SessionCounter"] = counter;
         }
+
 
         // Event handler for beginning of request
         protected void Application_BeginRequest(object sender, EventArgs e)
@@ -49,8 +52,13 @@ namespace Project5
         // Event handler for application error
         protected void Application_Error(object sender, EventArgs e)
         {
-
+            Exception ex = Server.GetLastError();
+            // Log the error, e.g., to a file or a monitoring system
+            // Context details can be useful here
+            HttpContext.Current.Response.Clear();
+            Server.ClearError();  // clear the error so it doesn't continue propagating
         }
+
 
         // Event handler for session end
         protected void Session_End(object sender, EventArgs e)

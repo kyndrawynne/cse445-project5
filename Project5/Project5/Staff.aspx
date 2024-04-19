@@ -11,6 +11,7 @@
         <div class="container">
             <h1>Staff Dashboard</h1>
             <p>Welcome to the staff area, where there will eventually be functions. For now please use our default username, "user", and password, "pass", to check out our Member page and find our offered services!</p>
+                <asp:Button ID="btnTryIt" runat="server" Text="TryIt" OnClick="btnTryIt_Click" CssClass="button" />
                 <asp:Button ID="btnLogOut" runat="server" Text="Log Out" OnClick="btnLogOut_Click" CssClass="button" />
             </div>
     </form>

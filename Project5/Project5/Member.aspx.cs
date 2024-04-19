@@ -17,8 +17,7 @@ namespace Project5
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Set the label text to display the current time
-            lbl_currentTime.Text = Global.currentTime;
+
         }
 
         protected void btnFindStore_Click(object sender, EventArgs e)
@@ -35,8 +34,12 @@ namespace Project5
 
         protected void btnLogOut_Click(object sender, EventArgs e)
         {
+            // Clear authentication cookie
+            FormsAuthentication.SignOut();
+
             // Abandon the session to log out the user
             Session.Abandon();
+
             // Redirect the user to the default page
             Response.Redirect("Default.aspx");
         }
