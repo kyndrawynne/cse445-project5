@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Members>
-  <Member></Member>
   <Member>
     <Username>user</Username>
     <Password>9D4E1E23BD5B727046A9E3B4B7DB57BD8D6EE684</Password>
+  </Member>
+  <Member>
+    <Username>gm</Username>
+    <Password>D2D359E4AE582ADAC36781910ECC7ABBB6C45854</Password>
   </Member>
 </Members>

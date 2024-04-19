@@ -4,4 +4,8 @@
     <Username>TA</Username>
     <Password>14A52139AC8CE452DA4A84F1ADACABFFA7969A3A</Password>
   </StaffMember>
+  <StaffMember>
+    <Username>test</Username>
+    <Password>A94A8FE5CCB19BA61C4C0873D391E987982FBBD3</Password>
+  </StaffMember>
 </Staff>
