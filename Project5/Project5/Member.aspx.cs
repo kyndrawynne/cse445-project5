@@ -13,8 +13,6 @@ namespace Project5
 {
     public partial class Member : System.Web.UI.Page
     {
-        private FormsAuthenticationTicket userTicket;
-
         protected void Page_Load(object sender, EventArgs e)
         {
 

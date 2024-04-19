@@ -59,7 +59,6 @@ C:\Users\dmartin\source\repos\cse445-project5\Project5\Project5\bin\Microsoft.Co
 C:\Users\dmartin\source\repos\cse445-project5\Project5\Project5\obj\Debug\Project5.csproj.CopyComplete
 C:\Users\dmartin\source\repos\cse445-project5\Project5\Project5\obj\Debug\Project5.dll
 C:\Users\dmartin\source\repos\cse445-project5\Project5\Project5\obj\Debug\Project5.pdb
-C:\Users\dmartin\source\repos\cse445-project5\Project5\Project5\bin\CaptchaLib.dll
 C:\Users\dmartin\source\repos\cse445-project5\Project5\Project5\bin\System.Data.SQLite.dll
 C:\Users\dmartin\source\repos\cse445-project5\Project5\Project5\bin\System.Drawing.Common.dll
 C:\Users\dmartin\source\repos\cse445-project5\Project5\Project5\bin\System.Data.SQLite.xml

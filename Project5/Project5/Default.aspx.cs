@@ -17,15 +17,7 @@ namespace Project5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["SessionStartTime"] != null)
-            {
-                DateTime startTime = (DateTime)Session["SessionStartTime"];
-                lbl_currentTime.Text = "Session started at: " + startTime.ToString("yyyy-MM-dd HH:mm:ss");
-            }
-            else
-            {
-                lbl_currentTime.Text = "Session has not started.";
-            }
+
         }
 
         protected void btnMemberPage_Click(object sender, EventArgs e)

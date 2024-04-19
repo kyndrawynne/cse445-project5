@@ -25,9 +25,7 @@ namespace Project5
 
             if (authSuccessful)
             {
-                bool rememberMe = Login1.RememberMeSet;
-                FormsAuthentication.SetAuthCookie(Login1.UserName, rememberMe);
-                // Explicitly redirect to the Staff page
+                FormsAuthentication.SetAuthCookie(Login1.UserName, false); // false to ensure the cookie is not persistent
                 Response.Redirect("~/Staff.aspx");
             }
             else

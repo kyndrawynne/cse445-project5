@@ -20,23 +20,20 @@ namespace Project5
 
         protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
         {
-            // Authenticate the member or staff using the provided credentials
-            bool authSuccessful = AuthenticateUser(Login1.UserName, Login1.Password);
-            e.Authenticated = authSuccessful;
+            bool isValidUser = AuthenticateUser(Login1.UserName, Login1.Password);
+            e.Authenticated = isValidUser;
 
-            // If authentication is successful, set authentication cookie and redirect to member page
-            if (authSuccessful)
+            if (isValidUser)
             {
-                bool rememberMe = Login1.RememberMeSet;
-                FormsAuthentication.SetAuthCookie(Login1.UserName, rememberMe);
-                Response.Redirect("~/Member.aspx");
+                FormsAuthentication.SetAuthCookie(Login1.UserName, false); // Always false for session cookies
+                Response.Redirect("~/Member.aspx"); // Direct to appropriate page
             }
-            else // If authentication fails, display error message
+            else
             {
                 lblErrorMessage.Text = "Invalid Username or Password. Please try again.";
-                lblErrorMessage.Visible = true;
             }
         }
+
 
         // Method to authenticate the user by checking username and password against stored member or staff data
         private bool AuthenticateUser(string username, string password)
