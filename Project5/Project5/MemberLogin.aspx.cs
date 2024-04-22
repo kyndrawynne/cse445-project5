@@ -1,5 +1,5 @@
 ﻿/*
- Code by Kyndra Wynne
+Code by Kyndra Wynne
 */
 using System;
 using System.Linq;
