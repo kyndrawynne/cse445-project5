@@ -26,7 +26,7 @@ namespace Project5
             if (isValidUser)
             {
                 FormsAuthentication.SetAuthCookie(Login1.UserName, false); // Always false for session cookies
-                Response.Redirect("~/Member.aspx"); // Direct to appropriate page
+                Response.Redirect("~/Page3/Member.aspx"); // Direct to appropriate page
             }
             else
             {

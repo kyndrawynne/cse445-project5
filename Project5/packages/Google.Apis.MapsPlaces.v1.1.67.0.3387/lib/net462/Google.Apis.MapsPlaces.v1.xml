@@ -1,0 +1,1686 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Google.Apis.MapsPlaces.v1</name>
+    </assembly>
+    <members>
+        <member name="T:Google.Apis.MapsPlaces.v1.MapsPlacesService">
+            <summary>The MapsPlaces Service.</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesService.Version">
+            <summary>The API version.</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesService.DiscoveryVersionUsed">
+            <summary>The discovery version used to generate this service.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.MapsPlacesService.#ctor">
+            <summary>Constructs a new service.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.MapsPlacesService.#ctor(Google.Apis.Services.BaseClientService.Initializer)">
+            <summary>Constructs a new service.</summary>
+            <param name="initializer">The service initializer.</param>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesService.Features">
+            <summary>Gets the service supported features.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesService.Name">
+            <summary>Gets the service name.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesService.BaseUri">
+            <summary>Gets the service base URI.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesService.BasePath">
+            <summary>Gets the service base path.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesService.BatchUri">
+            <summary>Gets the batch base URI; <c>null</c> if unspecified.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesService.BatchPath">
+            <summary>Gets the batch base path; <c>null</c> if unspecified.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.MapsPlacesService.Scope">
+            <summary>Available OAuth 2.0 scopes for use with the Places API (New).</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesService.Scope.CloudPlatform">
+            <summary>
+            See, edit, configure, and delete your Google Cloud data and see the email address for your Google
+            Account.
+            </summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesService.Scope.MapsPlatformPlaces">
+            <summary>Private Service: https://www.googleapis.com/auth/maps-platform.places</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesService.Scope.MapsPlatformPlacesAutocomplete">
+            <summary>Private Service: https://www.googleapis.com/auth/maps-platform.places.autocomplete</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesService.Scope.MapsPlatformPlacesDetails">
+            <summary>Private Service: https://www.googleapis.com/auth/maps-platform.places.details</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesService.Scope.MapsPlatformPlacesNearbysearch">
+            <summary>Private Service: https://www.googleapis.com/auth/maps-platform.places.nearbysearch</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesService.Scope.MapsPlatformPlacesTextsearch">
+            <summary>Private Service: https://www.googleapis.com/auth/maps-platform.places.textsearch</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.MapsPlacesService.ScopeConstants">
+            <summary>Available OAuth 2.0 scope constants for use with the Places API (New).</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesService.ScopeConstants.CloudPlatform">
+            <summary>
+            See, edit, configure, and delete your Google Cloud data and see the email address for your Google
+            Account.
+            </summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesService.ScopeConstants.MapsPlatformPlaces">
+            <summary>Private Service: https://www.googleapis.com/auth/maps-platform.places</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesService.ScopeConstants.MapsPlatformPlacesAutocomplete">
+            <summary>Private Service: https://www.googleapis.com/auth/maps-platform.places.autocomplete</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesService.ScopeConstants.MapsPlatformPlacesDetails">
+            <summary>Private Service: https://www.googleapis.com/auth/maps-platform.places.details</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesService.ScopeConstants.MapsPlatformPlacesNearbysearch">
+            <summary>Private Service: https://www.googleapis.com/auth/maps-platform.places.nearbysearch</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesService.ScopeConstants.MapsPlatformPlacesTextsearch">
+            <summary>Private Service: https://www.googleapis.com/auth/maps-platform.places.textsearch</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesService.Places">
+            <summary>Gets the Places resource.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1">
+            <summary>A base abstract class for MapsPlaces requests.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new MapsPlacesBaseServiceRequest instance.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.Xgafv">
+            <summary>V1 error format.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.XgafvEnum">
+            <summary>V1 error format.</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.XgafvEnum.Value1">
+            <summary>v1 error format</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.XgafvEnum.Value2">
+            <summary>v2 error format</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.AccessToken">
+            <summary>OAuth access token.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.Alt">
+            <summary>Data format for response.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.AltEnum">
+            <summary>Data format for response.</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.AltEnum.Json">
+            <summary>Responses with Content-Type of application/json</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.AltEnum.Media">
+            <summary>Media download with context-dependent Content-Type</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.AltEnum.Proto">
+            <summary>Responses with Content-Type of application/x-protobuf</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.Callback">
+            <summary>JSONP</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.Fields">
+            <summary>Selector specifying which fields to include in a partial response.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.Key">
+            <summary>
+            API key. Your API key identifies your project and provides you with API access, quota, and reports. Required
+            unless you provide an OAuth 2.0 token.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.OauthToken">
+            <summary>OAuth 2.0 token for the current user.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.PrettyPrint">
+            <summary>Returns response with indentations and line breaks.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.QuotaUser">
+            <summary>
+            Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a
+            user, but should not exceed 40 characters.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.UploadType">
+            <summary>Legacy upload protocol for media (e.g. "media", "multipart").</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.UploadProtocol">
+            <summary>Upload protocol for media (e.g. "raw", "multipart").</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.MapsPlacesBaseServiceRequest`1.InitParameters">
+            <summary>Initializes MapsPlaces parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.PlacesResource">
+            <summary>The "places" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.PlacesResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.Photos">
+            <summary>Gets the Photos resource.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.PlacesResource.PhotosResource">
+            <summary>The "photos" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.MapsPlaces.v1.PlacesResource.PhotosResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.PhotosResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.PhotosResource.GetMedia(System.String)">
+            <summary>Get a photo media with a photo reference string.</summary>
+            <param name="name">
+            Required. The resource name of a photo media in the format:
+            `places/{place_id}/photos/{photo_reference}/media`. The resource name of a photo as returned in a Place
+            object's `photos.name` field comes with the format `places/{place_id}/photos/{photo_reference}`. You
+            need to append `/media` at the end of the photo resource to get the photo media resource name.
+            </param>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.PlacesResource.PhotosResource.GetMediaRequest">
+            <summary>Get a photo media with a photo reference string.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.PhotosResource.GetMediaRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new GetMedia request.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.PhotosResource.GetMediaRequest.Name">
+            <summary>
+            Required. The resource name of a photo media in the format:
+            `places/{place_id}/photos/{photo_reference}/media`. The resource name of a photo as returned in a
+            Place object's `photos.name` field comes with the format
+            `places/{place_id}/photos/{photo_reference}`. You need to append `/media` at the end of the photo
+            resource to get the photo media resource name.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.PhotosResource.GetMediaRequest.MaxHeightPx">
+            <summary>
+            Optional. Specifies the maximum desired height, in pixels, of the image. If the image is smaller
+            than the values specified, the original image will be returned. If the image is larger in either
+            dimension, it will be scaled to match the smaller of the two dimensions, restricted to its original
+            aspect ratio. Both the max_height_px and max_width_px properties accept an integer between 1 and
+            4800, inclusively. If the value is not within the allowed range, an INVALID_ARGUMENT error will be
+            returned. At least one of max_height_px or max_width_px needs to be specified. If neither
+            max_height_px nor max_width_px is specified, an INVALID_ARGUMENT error will be returned.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.PhotosResource.GetMediaRequest.MaxWidthPx">
+            <summary>
+            Optional. Specifies the maximum desired width, in pixels, of the image. If the image is smaller than
+            the values specified, the original image will be returned. If the image is larger in either
+            dimension, it will be scaled to match the smaller of the two dimensions, restricted to its original
+            aspect ratio. Both the max_height_px and max_width_px properties accept an integer between 1 and
+            4800, inclusively. If the value is not within the allowed range, an INVALID_ARGUMENT error will be
+            returned. At least one of max_height_px or max_width_px needs to be specified. If neither
+            max_height_px nor max_width_px is specified, an INVALID_ARGUMENT error will be returned.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.PhotosResource.GetMediaRequest.SkipHttpRedirect">
+            <summary>
+            Optional. If set, skip the default HTTP redirect behavior and render a text format (for example, in
+            JSON format for HTTP use case) response. If not set, an HTTP redirect will be issued to redirect the
+            call to the image media. This option is ignored for non-HTTP requests.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.PhotosResource.GetMediaRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.PhotosResource.GetMediaRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.PhotosResource.GetMediaRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.PhotosResource.GetMediaRequest.InitParameters">
+            <summary>Initializes GetMedia parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.Autocomplete(Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest)">
+            <summary>Returns predictions for the given input.</summary>
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.PlacesResource.AutocompleteRequest">
+            <summary>Returns predictions for the given input.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.AutocompleteRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest)">
+            <summary>Constructs a new Autocomplete request.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.AutocompleteRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.AutocompleteRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.AutocompleteRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.AutocompleteRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.AutocompleteRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.AutocompleteRequest.InitParameters">
+            <summary>Initializes Autocomplete parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.Get(System.String)">
+            <summary>
+            Get the details of a place based on its resource name, which is a string in the `places/{place_id}` format.
+            </summary>
+            <param name="name">Required. The resource name of a place, in the `places/{place_id}` format.</param>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.PlacesResource.GetRequest">
+            <summary>
+            Get the details of a place based on its resource name, which is a string in the `places/{place_id}` format.
+            </summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.GetRequest.Name">
+            <summary>Required. The resource name of a place, in the `places/{place_id}` format.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.GetRequest.LanguageCode">
+            <summary>
+            Optional. Place details will be displayed with the preferred language if available. Current list of
+            supported languages: https://developers.google.com/maps/faq#languagesupport.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.GetRequest.RegionCode">
+            <summary>
+            Optional. The Unicode country/region code (CLDR) of the location where the request is coming from. This
+            parameter is used to display the place details, like region-specific place name, if available. The
+            parameter can affect results based on applicable law. For more information, see
+            https://www.unicode.org/cldr/charts/latest/supplemental/territory_language_information.html. Note that
+            3-digit region codes are not currently supported.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.GetRequest.SessionToken">
+            <summary>
+            Optional. A string which identifies an Autocomplete session for billing purposes. Must be a URL and
+            filename safe base64 string with at most 36 ASCII characters in length. Otherwise an INVALID_ARGUMENT
+            error is returned. The session begins when the user starts typing a query, and concludes when they
+            select a place and a call to Place Details or Address Validation is made. Each session can have multiple
+            queries, followed by one Place Details or Address Validation request. The credentials used for each
+            request within a session must belong to the same Google Cloud Console project. Once a session has
+            concluded, the token is no longer valid; your app must generate a fresh token for each session. If the
+            `session_token` parameter is omitted, or if you reuse a session token, the session is charged as if no
+            session token was provided (each request is billed separately). We recommend the following guidelines: *
+            Use session tokens for all Place Autocomplete calls. * Generate a fresh token for each session. Using a
+            version 4 UUID is recommended. * Ensure that the credentials used for all Place Autocomplete, Place
+            Details, and Address Validation requests within a session belong to the same Cloud Console project. * Be
+            sure to pass a unique session token for each new session. Using the same token for more than one session
+            will result in each request being billed individually.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.SearchNearby(Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequest)">
+            <summary>Search for places near locations.</summary>
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.PlacesResource.SearchNearbyRequest">
+            <summary>Search for places near locations.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.SearchNearbyRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequest)">
+            <summary>Constructs a new SearchNearby request.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.SearchNearbyRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.SearchNearbyRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.SearchNearbyRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.SearchNearbyRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.SearchNearbyRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.SearchNearbyRequest.InitParameters">
+            <summary>Initializes SearchNearby parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.SearchText(Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest)">
+            <summary>Text query based place search.</summary>
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.PlacesResource.SearchTextRequest">
+            <summary>Text query based place search.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.SearchTextRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest)">
+            <summary>Constructs a new SearchText request.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.SearchTextRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.SearchTextRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.SearchTextRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.SearchTextRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.PlacesResource.SearchTextRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.MapsPlaces.v1.PlacesResource.SearchTextRequest.InitParameters">
+            <summary>Initializes SearchText parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleGeoTypeViewport">
+            <summary>
+            A latitude-longitude viewport, represented as two diagonally opposite `low` and `high` points. A viewport is
+            considered a closed region, i.e. it includes its boundary. The latitude bounds must range between -90 to 90
+            degrees inclusive, and the longitude bounds must range between -180 to 180 degrees inclusive. Various cases
+            include: - If `low` = `high`, the viewport consists of that single point. - If `low.longitude` &amp;gt;
+            `high.longitude`, the longitude range is inverted (the viewport crosses the 180 degree longitude line). - If
+            `low.longitude` = -180 degrees and `high.longitude` = 180 degrees, the viewport includes all longitudes. - If
+            `low.longitude` = 180 degrees and `high.longitude` = -180 degrees, the longitude range is empty. - If
+            `low.latitude` &amp;gt; `high.latitude`, the latitude range is empty. Both `low` and `high` must be populated,
+            and the represented box cannot be empty (as specified by the definitions above). An empty viewport will result
+            in an error. For example, this viewport fully encloses New York City: { "low": { "latitude": 40.477398,
+            "longitude": -74.259087 }, "high": { "latitude": 40.91618, "longitude": -73.70018 } }
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleGeoTypeViewport.High">
+            <summary>Required. The high point of the viewport.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleGeoTypeViewport.Low">
+            <summary>Required. The low point of the viewport.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleGeoTypeViewport.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AuthorAttribution">
+            <summary>Information about the author of the UGC data. Used in Photo, and Review.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AuthorAttribution.DisplayName">
+            <summary>Name of the author of the Photo or Review.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AuthorAttribution.PhotoUri">
+            <summary>Profile photo URI of the author of the Photo or Review.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AuthorAttribution.Uri">
+            <summary>URI of the author of the Photo or Review.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AuthorAttribution.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest">
+            <summary>Request proto for AutocompletePlaces.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest.IncludeQueryPredictions">
+            <summary>
+            Optional. If true, the response will include both Place and query predictions. Otherwise the response will
+            only return Place predictions.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest.IncludedPrimaryTypes">
+            <summary>
+            Optional. Included primary Place type (for example, "restaurant" or "gas_station") from
+            https://developers.google.com/maps/documentation/places/web-service/place-types. A Place is only returned if
+            its primary type is included in this list. Up to 5 values can be specified. If no types are specified, all
+            Place types are returned.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest.IncludedRegionCodes">
+            <summary>
+            Optional. Only include results in the specified regions, specified as up to 15 CLDR two-character region
+            codes. An empty set will not restrict the results. If both `location_restriction` and
+            `included_region_codes` are set, the results will be located in the area of intersection.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest.Input">
+            <summary>Required. The text string on which to search.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest.InputOffset">
+            <summary>
+            Optional. A zero-based Unicode character offset of `input` indicating the cursor position in `input`. The
+            cursor position may influence what predictions are returned. If empty, defaults to the length of `input`.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest.LanguageCode">
+            <summary>
+            Optional. The language in which to return results. Defaults to en-US. The results may be in mixed languages
+            if the language used in `input` is different from `language_code` or if the returned Place does not have a
+            translation from the local language to `language_code`.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest.LocationBias">
+            <summary>
+            Optional. Bias results to a specified location. At most one of `location_bias` or `location_restriction`
+            should be set. If neither are set, the results will be biased by IP address, meaning the IP address will be
+            mapped to an imprecise location and used as a biasing signal.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest.LocationRestriction">
+            <summary>
+            Optional. Restrict results to a specified location. At most one of `location_bias` or `location_restriction`
+            should be set. If neither are set, the results will be biased by IP address, meaning the IP address will be
+            mapped to an imprecise location and used as a biasing signal.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest.Origin">
+            <summary>
+            Optional. The origin point from which to calculate geodesic distance to the destination (returned as
+            `distance_meters`). If this value is omitted, geodesic distance will not be returned.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest.RegionCode">
+            <summary>
+            Optional. The region code, specified as a CLDR two-character region code. This affects address formatting,
+            result ranking, and may influence what results are returned. This does not restrict results to the specified
+            region. To restrict results to a region, use `region_code_restriction`.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest.SessionToken">
+            <summary>
+            Optional. A string which identifies an Autocomplete session for billing purposes. Must be a URL and filename
+            safe base64 string with at most 36 ASCII characters in length. Otherwise an INVALID_ARGUMENT error is
+            returned. The session begins when the user starts typing a query, and concludes when they select a place and
+            a call to Place Details or Address Validation is made. Each session can have multiple queries, followed by
+            one Place Details or Address Validation request. The credentials used for each request within a session must
+            belong to the same Google Cloud Console project. Once a session has concluded, the token is no longer valid;
+            your app must generate a fresh token for each session. If the `session_token` parameter is omitted, or if
+            you reuse a session token, the session is charged as if no session token was provided (each request is
+            billed separately). We recommend the following guidelines: * Use session tokens for all Place Autocomplete
+            calls. * Generate a fresh token for each session. Using a version 4 UUID is recommended. * Ensure that the
+            credentials used for all Place Autocomplete, Place Details, and Address Validation requests within a session
+            belong to the same Cloud Console project. * Be sure to pass a unique session token for each new session.
+            Using the same token for more than one session will result in each request being billed individually.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequestLocationBias">
+            <summary>The region to search. The results may be biased around the specified region.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequestLocationBias.Circle">
+            <summary>A circle defined by a center point and radius.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequestLocationBias.Rectangle">
+            <summary>A viewport defined by a northeast and a southwest corner.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequestLocationBias.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequestLocationRestriction">
+            <summary>The region to search. The results will be restricted to the specified region.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequestLocationRestriction.Circle">
+            <summary>A circle defined by a center point and radius.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequestLocationRestriction.Rectangle">
+            <summary>A viewport defined by a northeast and a southwest corner.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesRequestLocationRestriction.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponse">
+            <summary>Response proto for AutocompletePlaces.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponse.Suggestions">
+            <summary>Contains a list of suggestions, ordered in descending order of relevance.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion">
+            <summary>An Autocomplete suggestion result.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion.PlacePrediction">
+            <summary>A prediction for a Place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion.QueryPrediction">
+            <summary>A prediction for a query.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText">
+            <summary>Text representing a Place or query prediction. The text may be used as is or formatted.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText.Matches">
+            <summary>
+            A list of string ranges identifying where the input request matched in `text`. The ranges can be used to
+            format specific parts of `text`. The substrings may not be exact matches of `input` if the matching was
+            determined by criteria other than string matching (for example, spell corrections or transliterations).
+            These values are Unicode character offsets of `text`. The ranges are guaranteed to be ordered in increasing
+            offset values.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText.Text">
+            <summary>Text that may be used as is or formatted with `matches`.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction">
+            <summary>Prediction results for a Place Autocomplete prediction.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction.DistanceMeters">
+            <summary>
+            The length of the geodesic in meters from `origin` if `origin` is specified. Certain predictions such as
+            routes may not populate this field.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction.Place">
+            <summary>
+            The resource name of the suggested Place. This name can be used in other APIs that accept Place names.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction.PlaceId">
+            <summary>
+            The unique identifier of the suggested Place. This identifier can be used in other APIs that accept Place
+            IDs.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction.StructuredFormat">
+            <summary>
+            A breakdown of the Place prediction into main text containing the name of the Place and secondary text
+            containing additional disambiguating features (such as a city or region). `structured_format` is recommended
+            for developers who wish to show two separate, but related, UI elements. Developers who wish to show a single
+            UI element may want to use `text` instead. They are two different ways to represent a Place prediction.
+            Users should not try to parse `structured_format` into `text` or vice versa.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction.Text">
+            <summary>
+            Contains the human-readable name for the returned result. For establishment results, this is usually the
+            business name and address. `text` is recommended for developers who wish to show a single UI element.
+            Developers who wish to show two separate, but related, UI elements may want to use `structured_format`
+            instead. They are two different ways to represent a Place prediction. Users should not try to parse
+            `structured_format` into `text` or vice versa. This text may be different from the `display_name` returned
+            by GetPlace. May be in mixed languages if the request `input` and `language_code` are in different languages
+            or if the Place does not have a translation from the local language to `language_code`.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction.Types">
+            <summary>
+            List of types that apply to this Place from Table A or Table B in
+            https://developers.google.com/maps/documentation/places/web-service/place-types. A type is a categorization
+            of a Place. Places with shared types will share similar characteristics.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionQueryPrediction">
+            <summary>Prediction results for a Query Autocomplete prediction.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionQueryPrediction.StructuredFormat">
+            <summary>
+            A breakdown of the query prediction into main text containing the query and secondary text containing
+            additional disambiguating features (such as a city or region). `structured_format` is recommended for
+            developers who wish to show two separate, but related, UI elements. Developers who wish to show a single UI
+            element may want to use `text` instead. They are two different ways to represent a query prediction. Users
+            should not try to parse `structured_format` into `text` or vice versa.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionQueryPrediction.Text">
+            <summary>
+            The predicted text. This text does not represent a Place, but rather a text query that could be used in a
+            search endpoint (for example, Text Search). `text` is recommended for developers who wish to show a single
+            UI element. Developers who wish to show two separate, but related, UI elements may want to use
+            `structured_format` instead. They are two different ways to represent a query prediction. Users should not
+            try to parse `structured_format` into `text` or vice versa. May be in mixed languages if the request `input`
+            and `language_code` are in different languages or if part of the query does not have a translation from the
+            local language to `language_code`.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionQueryPrediction.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange">
+            <summary>Identifies a substring within a given text.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange.EndOffset">
+            <summary>Zero-based offset of the last Unicode character (exclusive).</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange.StartOffset">
+            <summary>Zero-based offset of the first Unicode character of the string (inclusive).</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStructuredFormat">
+            <summary>
+            Contains a breakdown of a Place or query prediction into main text and secondary text. For Place predictions,
+            the main text contains the specific name of the Place. For query predictions, the main text contains the query.
+            The secondary text contains additional disambiguating features (such as a city or region) to further identify
+            the Place or refine the query.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStructuredFormat.MainText">
+            <summary>Represents the name of the Place or query.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStructuredFormat.SecondaryText">
+            <summary>
+            Represents additional disambiguating features (such as a city or region) to further identify the Place or
+            refine the query.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStructuredFormat.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Circle">
+            <summary>Circle with a LatLng as center and radius.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Circle.Center">
+            <summary>
+            Required. Center latitude and longitude. The range of latitude must be within [-90.0, 90.0]. The range of
+            the longitude must be within [-180.0, 180.0].
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Circle.Radius">
+            <summary>Required. Radius measured in meters. The radius must be within [0.0, 50000.0].</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Circle.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptions">
+            <summary>
+            Information about the EV Charge Station hosted in Place. Terminology follows
+            https://afdc.energy.gov/fuels/electricity_infrastructure.html One port could charge one car at a time. One port
+            has one or more connectors. One station has one or more ports.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptions.ConnectorAggregation">
+            <summary>
+            A list of EV charging connector aggregations that contain connectors of the same type and same charge rate.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptions.ConnectorCount">
+            <summary>
+            Number of connectors at this station. However, because some ports can have multiple connectors but only be
+            able to charge one car at a time (e.g.) the number of connectors may be greater than the total number of
+            cars which can charge simultaneously.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptions.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation">
+            <summary>
+            EV charging information grouped by [type, max_charge_rate_kw]. Shows EV charge aggregation of connectors that
+            have the same type and max charge rate in kw.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation.AvailabilityLastUpdateTimeRaw">
+            <summary>
+            The timestamp when the connector availability information in this aggregation was last updated.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation.AvailabilityLastUpdateTime">
+            <summary><seealso cref="T:System.Object"/> representation of <see cref="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation.AvailabilityLastUpdateTimeRaw"/>.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation.AvailabilityLastUpdateTimeDateTimeOffset">
+            <summary>
+            <seealso cref="T:System.DateTimeOffset"/> representation of <see cref="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation.AvailabilityLastUpdateTimeRaw"/>.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation.AvailableCount">
+            <summary>Number of connectors in this aggregation that are currently available.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation.Count">
+            <summary>Number of connectors in this aggregation.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation.MaxChargeRateKw">
+            <summary>The static max charging rate in kw of each connector in the aggregation.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation.OutOfServiceCount">
+            <summary>Number of connectors in this aggregation that are currently out of service.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation.Type">
+            <summary>The connector type of this aggregation.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1FuelOptions">
+            <summary>
+            The most recent information about fuel options in a gas station. This information is updated regularly.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1FuelOptions.FuelPrices">
+            <summary>
+            The last known fuel price for each type of fuel this station has. There is one entry per fuel type this
+            station has. Order is not important.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1FuelOptions.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1FuelOptionsFuelPrice">
+            <summary>Fuel price information for a given type.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1FuelOptionsFuelPrice.Price">
+            <summary>The price of the fuel.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1FuelOptionsFuelPrice.Type">
+            <summary>The type of fuel.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1FuelOptionsFuelPrice.UpdateTimeRaw">
+            <summary>The time the fuel price was last updated.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1FuelOptionsFuelPrice.UpdateTime">
+            <summary><seealso cref="T:System.Object"/> representation of <see cref="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1FuelOptionsFuelPrice.UpdateTimeRaw"/>.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1FuelOptionsFuelPrice.UpdateTimeDateTimeOffset">
+            <summary><seealso cref="T:System.DateTimeOffset"/> representation of <see cref="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1FuelOptionsFuelPrice.UpdateTimeRaw"/>.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1FuelOptionsFuelPrice.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Photo">
+            <summary>Information about a photo of a place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Photo.AuthorAttributions">
+            <summary>This photo's authors.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Photo.HeightPx">
+            <summary>The maximum available height, in pixels.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Photo.Name">
+            <summary>
+            Identifier. A reference representing this place photo which may be used to look up this place photo again
+            (also called the API "resource" name: `places/{place_id}/photos/{photo}`).
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Photo.WidthPx">
+            <summary>The maximum available width, in pixels.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Photo.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PhotoMedia">
+            <summary>A photo media from Places API.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PhotoMedia.Name">
+            <summary>
+            The resource name of a photo media in the format: `places/{place_id}/photos/{photo_reference}/media`.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PhotoMedia.PhotoUri">
+            <summary>A short-lived uri that can be used to render the photo.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PhotoMedia.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place">
+            <summary>All the information representing a Place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.AccessibilityOptions">
+            <summary>Information about the accessibility options a place offers.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.AddressComponents">
+            <summary>
+            Repeated components for each locality level. Note the following facts about the address_components[] array:
+            - The array of address components may contain more components than the formatted_address. - The array does
+            not necessarily include all the political entities that contain an address, apart from those included in the
+            formatted_address. To retrieve all the political entities that contain a specific address, you should use
+            reverse geocoding, passing the latitude/longitude of the address as a parameter to the request. - The format
+            of the response is not guaranteed to remain the same between requests. In particular, the number of
+            address_components varies based on the address requested and can change over time for the same address. A
+            component can change position in the array. The type of the component can change. A particular component may
+            be missing in a later response.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.AdrFormatAddress">
+            <summary>The place's address in adr microformat: http://microformats.org/wiki/adr.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.AllowsDogs">
+            <summary>Place allows dogs.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.Attributions">
+            <summary>A set of data provider that must be shown with this result.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.BusinessStatus">
+            <summary>The business status for the place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.CurbsidePickup">
+            <summary>Specifies if the business supports curbside pickup.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.CurrentOpeningHours">
+            <summary>
+            The hours of operation for the next seven days (including today). The time period starts at midnight on the
+            date of the request and ends at 11:59 pm six days later. This field includes the special_days subfield of
+            all hours, set for dates that have exceptional hours.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.CurrentSecondaryOpeningHours">
+            <summary>
+            Contains an array of entries for the next seven days including information about secondary hours of a
+            business. Secondary hours are different from a business's main hours. For example, a restaurant can specify
+            drive through hours or delivery hours as its secondary hours. This field populates the type subfield, which
+            draws from a predefined list of opening hours types (such as DRIVE_THROUGH, PICKUP, or TAKEOUT) based on the
+            types of the place. This field includes the special_days subfield of all hours, set for dates that have
+            exceptional hours.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.Delivery">
+            <summary>Specifies if the business supports delivery.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.DineIn">
+            <summary>Specifies if the business supports indoor or outdoor seating options.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.DisplayName">
+            <summary>
+            The localized name of the place, suitable as a short human-readable description. For example, "Google
+            Sydney", "Starbucks", "Pyrmont", etc.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.EditorialSummary">
+            <summary>
+            Contains a summary of the place. A summary is comprised of a textual overview, and also includes the
+            language code for these if applicable. Summary text must be presented as-is and can not be modified or
+            altered.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.EvChargeOptions">
+            <summary>Information of ev charging options.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.FormattedAddress">
+            <summary>A full, human-readable address for this place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.FuelOptions">
+            <summary>
+            The most recent information about fuel options in a gas station. This information is updated regularly.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.GoodForChildren">
+            <summary>Place is good for children.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.GoodForGroups">
+            <summary>Place accommodates groups.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.GoodForWatchingSports">
+            <summary>Place is suitable for watching sports.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.GoogleMapsUri">
+            <summary>A URL providing more information about this place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.IconBackgroundColor">
+            <summary>Background color for icon_mask in hex format, e.g. #909CE1.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.IconMaskBaseUri">
+            <summary>
+            A truncated URL to an icon mask. User can access different icon type by appending type suffix to the end
+            (eg, ".svg" or ".png").
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.Id">
+            <summary>The unique identifier of a place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.InternationalPhoneNumber">
+            <summary>A human-readable phone number for the place, in international format.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.LiveMusic">
+            <summary>Place provides live music.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.Location">
+            <summary>The position of this place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.MenuForChildren">
+            <summary>Place has a children's menu.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.Name">
+            <summary>
+            This Place's resource name, in `places/{place_id}` format. Can be used to look up the Place.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.NationalPhoneNumber">
+            <summary>A human-readable phone number for the place, in national format.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.OutdoorSeating">
+            <summary>Place provides outdoor seating.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.ParkingOptions">
+            <summary>Options of parking provided by the place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.PaymentOptions">
+            <summary>
+            Payment options the place accepts. If a payment option data is not available, the payment option field will
+            be unset.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.Photos">
+            <summary>
+            Information (including references) about photos of this place. A maximum of 10 photos can be returned.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.PlusCode">
+            <summary>Plus code of the place location lat/long.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.PriceLevel">
+            <summary>Price level of the place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.PrimaryType">
+            <summary>
+            The primary type of the given result. This type must one of the Places API supported types. For example,
+            "restaurant", "cafe", "airport", etc. A place can only have a single primary type. For the complete list of
+            possible values, see Table A and Table B at
+            https://developers.google.com/maps/documentation/places/web-service/place-types
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.PrimaryTypeDisplayName">
+            <summary>
+            The display name of the primary type, localized to the request language if applicable. For the complete list
+            of possible values, see Table A and Table B at
+            https://developers.google.com/maps/documentation/places/web-service/place-types
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.Rating">
+            <summary>A rating between 1.0 and 5.0, based on user reviews of this place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.RegularOpeningHours">
+            <summary>The regular hours of operation.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.RegularSecondaryOpeningHours">
+            <summary>
+            Contains an array of entries for information about regular secondary hours of a business. Secondary hours
+            are different from a business's main hours. For example, a restaurant can specify drive through hours or
+            delivery hours as its secondary hours. This field populates the type subfield, which draws from a predefined
+            list of opening hours types (such as DRIVE_THROUGH, PICKUP, or TAKEOUT) based on the types of the place.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.Reservable">
+            <summary>Specifies if the place supports reservations.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.Restroom">
+            <summary>Place has restroom.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.Reviews">
+            <summary>
+            List of reviews about this place, sorted by relevance. A maximum of 5 reviews can be returned.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.ServesBeer">
+            <summary>Specifies if the place serves beer.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.ServesBreakfast">
+            <summary>Specifies if the place serves breakfast.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.ServesBrunch">
+            <summary>Specifies if the place serves brunch.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.ServesCocktails">
+            <summary>Place serves cocktails.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.ServesCoffee">
+            <summary>Place serves coffee.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.ServesDessert">
+            <summary>Place serves dessert.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.ServesDinner">
+            <summary>Specifies if the place serves dinner.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.ServesLunch">
+            <summary>Specifies if the place serves lunch.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.ServesVegetarianFood">
+            <summary>Specifies if the place serves vegetarian food.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.ServesWine">
+            <summary>Specifies if the place serves wine.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.ShortFormattedAddress">
+            <summary>A short, human-readable address for this place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.SubDestinations">
+            <summary>A list of sub destinations related to the place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.Takeout">
+            <summary>Specifies if the business supports takeout.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.Types">
+            <summary>
+            A set of type tags for this result. For example, "political" and "locality". For the complete list of
+            possible values, see Table A and Table B at
+            https://developers.google.com/maps/documentation/places/web-service/place-types
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.UserRatingCount">
+            <summary>The total number of reviews (with or without text) for this place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.UtcOffsetMinutes">
+            <summary>
+            Number of minutes this place's timezone is currently offset from UTC. This is expressed in minutes to
+            support timezones that are offset by fractions of an hour, e.g. X hours and 15 minutes.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.Viewport">
+            <summary>A viewport suitable for displaying the place on an average-sized map.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.WebsiteUri">
+            <summary>
+            The authoritative website for this place, e.g. a business' homepage. Note that for places that are part of a
+            chain (e.g. an IKEA store), this will usually be the website for the individual store, not the overall
+            chain.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Place.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAccessibilityOptions">
+            <summary>Information about the accessibility options a place offers.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAccessibilityOptions.WheelchairAccessibleEntrance">
+            <summary>Places has wheelchair accessible entrance.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAccessibilityOptions.WheelchairAccessibleParking">
+            <summary>Place offers wheelchair accessible parking.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAccessibilityOptions.WheelchairAccessibleRestroom">
+            <summary>Place has wheelchair accessible restroom.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAccessibilityOptions.WheelchairAccessibleSeating">
+            <summary>Place has wheelchair accessible seating.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAccessibilityOptions.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAddressComponent">
+            <summary>The structured components that form the formatted address, if this information is available.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAddressComponent.LanguageCode">
+            <summary>The language used to format this components, in CLDR notation.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAddressComponent.LongText">
+            <summary>
+            The full text description or name of the address component. For example, an address component for the
+            country Australia may have a long_name of "Australia".
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAddressComponent.ShortText">
+            <summary>
+            An abbreviated textual name for the address component, if available. For example, an address component for
+            the country of Australia may have a short_name of "AU".
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAddressComponent.Types">
+            <summary>An array indicating the type(s) of the address component.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAddressComponent.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAttribution">
+            <summary>Information about data providers of this place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAttribution.Provider">
+            <summary>Name of the Place's data provider.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAttribution.ProviderUri">
+            <summary>URI to the Place's data provider.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceAttribution.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHours">
+            <summary>Information about business hour of the place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHours.OpenNow">
+            <summary>
+            Is this place open right now? Always present unless we lack time-of-day or timezone data for these opening
+            hours.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHours.Periods">
+            <summary>
+            The periods that this place is open during the week. The periods are in chronological order, starting with
+            Sunday in the place-local timezone. An empty (but not absent) value indicates a place that is never open,
+            e.g. because it is closed temporarily for renovations.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHours.SecondaryHoursType">
+            <summary>A type string used to identify the type of secondary hours.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHours.SpecialDays">
+            <summary>
+            Structured information for special days that fall within the period that the returned opening hours cover.
+            Special days are days that could impact the business hours of a place, e.g. Christmas day. Set for
+            current_opening_hours and current_secondary_opening_hours if there are exceptional hours.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHours.WeekdayDescriptions">
+            <summary>
+            Localized strings describing the opening hours of this place, one string for each day of the week. Will be
+            empty if the hours are unknown or could not be converted to localized text. Example: "Sun: 18:00–06:00"
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHours.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHoursPeriod">
+            <summary>A period the place remains in open_now status.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHoursPeriod.Close">
+            <summary>The time that the place starts to be closed.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHoursPeriod.Open">
+            <summary>The time that the place starts to be open.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHoursPeriod.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint">
+            <summary>Status changing points.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint.Date">
+            <summary>Date in the local timezone for the place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint.Day">
+            <summary>A day of the week, as an integer in the range 0-6. 0 is Sunday, 1 is Monday, etc.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint.Hour">
+            <summary>The hour in 2 digits. Ranges from 00 to 23.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint.Minute">
+            <summary>The minute in 2 digits. Ranges from 00 to 59.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint.Truncated">
+            <summary>
+            Whether or not this endpoint was truncated. Truncation occurs when the real hours are outside the times we
+            are willing to return hours between, so we truncate the hours back to these boundaries. This ensures that at
+            most 24 * 7 hours from midnight of the day of the request are returned.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHoursSpecialDay">
+            <summary>
+            Structured information for special days that fall within the period that the returned opening hours cover.
+            Special days are days that could impact the business hours of a place, e.g. Christmas day.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHoursSpecialDay.Date">
+            <summary>The date of this special day.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceOpeningHoursSpecialDay.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceParkingOptions">
+            <summary>
+            Information about parking options for the place. A parking lot could support more than one option at the same
+            time.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceParkingOptions.FreeGarageParking">
+            <summary>Place offers free garage parking.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceParkingOptions.FreeParkingLot">
+            <summary>Place offers free parking lots.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceParkingOptions.FreeStreetParking">
+            <summary>Place offers free street parking.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceParkingOptions.PaidGarageParking">
+            <summary>Place offers paid garage parking.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceParkingOptions.PaidParkingLot">
+            <summary>Place offers paid parking lots.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceParkingOptions.PaidStreetParking">
+            <summary>Place offers paid street parking.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceParkingOptions.ValetParking">
+            <summary>Place offers valet parking.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceParkingOptions.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlacePaymentOptions">
+            <summary>Payment options the place accepts.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlacePaymentOptions.AcceptsCashOnly">
+            <summary>
+            Place accepts cash only as payment. Places with this attribute may still accept other payment methods.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlacePaymentOptions.AcceptsCreditCards">
+            <summary>Place accepts credit cards as payment.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlacePaymentOptions.AcceptsDebitCards">
+            <summary>Place accepts debit cards as payment.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlacePaymentOptions.AcceptsNfc">
+            <summary>Place accepts NFC payments.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlacePaymentOptions.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlacePlusCode">
+            <summary>
+            Plus code (http://plus.codes) is a location reference with two formats: global code defining a 14mx14m (1/8000th
+            of a degree) or smaller rectangle, and compound code, replacing the prefix with a reference location.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlacePlusCode.CompoundCode">
+            <summary>
+            Place's compound code, such as "33GV+HQ, Ramberg, Norway", containing the suffix of the global code and
+            replacing the prefix with a formatted name of a reference entity.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlacePlusCode.GlobalCode">
+            <summary>
+            Place's global (full) code, such as "9FWM33GV+HQ", representing an 1/8000 by 1/8000 degree area (~14 by 14
+            meters).
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlacePlusCode.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceSubDestination">
+            <summary>
+            Place resource name and id of sub destinations that relate to the place. For example, different terminals are
+            different destinations of an airport.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceSubDestination.Id">
+            <summary>The place id of the sub destination.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceSubDestination.Name">
+            <summary>The resource name of the sub destination.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1PlaceSubDestination.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Review">
+            <summary>Information about a review of a place.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Review.AuthorAttribution">
+            <summary>This review's author.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Review.Name">
+            <summary>
+            A reference representing this place review which may be used to look up this place review again (also called
+            the API "resource" name: `places/{place_id}/reviews/{review}`).
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Review.OriginalText">
+            <summary>The review text in its original language.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Review.PublishTimeRaw">
+            <summary>Timestamp for the review.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Review.PublishTime">
+            <summary><seealso cref="T:System.Object"/> representation of <see cref="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Review.PublishTimeRaw"/>.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Review.PublishTimeDateTimeOffset">
+            <summary><seealso cref="T:System.DateTimeOffset"/> representation of <see cref="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Review.PublishTimeRaw"/>.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Review.Rating">
+            <summary>A number between 1.0 and 5.0, also called the number of stars.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Review.RelativePublishTimeDescription">
+            <summary>
+            A string of formatted recent time, expressing the review time relative to the current time in a form
+            appropriate for the language and country.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Review.Text">
+            <summary>The localized text of the review.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1Review.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequest">
+            <summary>Request proto for Search Nearby. </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequest.ExcludedPrimaryTypes">
+            <summary>
+            Excluded primary Place type (e.g. "restaurant" or "gas_station") from
+            https://developers.google.com/maps/documentation/places/web-service/place-types. Up to 50 types from [Table
+            A](https://developers.google.com/maps/documentation/places/web-service/place-types#table-a) may be
+            specified. If there are any conflicting primary types, i.e. a type appears in both included_primary_types
+            and excluded_primary_types, an INVALID_ARGUMENT error is returned. If a Place type is specified with
+            multiple type restrictions, only places that satisfy all of the restrictions are returned. For example, if
+            we have {included_types = ["restaurant"], excluded_primary_types = ["restaurant"]}, the returned places
+            provide "restaurant" related services but do not operate primarily as "restaurants".
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequest.ExcludedTypes">
+            <summary>
+            Excluded Place type (eg, "restaurant" or "gas_station") from
+            https://developers.google.com/maps/documentation/places/web-service/place-types. Up to 50 types from [Table
+            A](https://developers.google.com/maps/documentation/places/web-service/place-types#table-a) may be
+            specified. If the client provides both included_types (e.g. restaurant) and excluded_types (e.g. cafe), then
+            the response should include places that are restaurant but not cafe. The response includes places that match
+            at least one of the included_types and none of the excluded_types. If there are any conflicting types, i.e.
+            a type appears in both included_types and excluded_types, an INVALID_ARGUMENT error is returned. If a Place
+            type is specified with multiple type restrictions, only places that satisfy all of the restrictions are
+            returned. For example, if we have {included_types = ["restaurant"], excluded_primary_types =
+            ["restaurant"]}, the returned places provide "restaurant" related services but do not operate primarily as
+            "restaurants".
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequest.IncludedPrimaryTypes">
+            <summary>
+            Included primary Place type (e.g. "restaurant" or "gas_station") from
+            https://developers.google.com/maps/documentation/places/web-service/place-types. A place can only have a
+            single primary type from the supported types table associated with it. Up to 50 types from [Table
+            A](https://developers.google.com/maps/documentation/places/web-service/place-types#table-a) may be
+            specified. If there are any conflicting primary types, i.e. a type appears in both included_primary_types
+            and excluded_primary_types, an INVALID_ARGUMENT error is returned. If a Place type is specified with
+            multiple type restrictions, only places that satisfy all of the restrictions are returned. For example, if
+            we have {included_types = ["restaurant"], excluded_primary_types = ["restaurant"]}, the returned places
+            provide "restaurant" related services but do not operate primarily as "restaurants".
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequest.IncludedTypes">
+            <summary>
+            Included Place type (eg, "restaurant" or "gas_station") from
+            https://developers.google.com/maps/documentation/places/web-service/place-types. Up to 50 types from [Table
+            A](https://developers.google.com/maps/documentation/places/web-service/place-types#table-a) may be
+            specified. If there are any conflicting types, i.e. a type appears in both included_types and
+            excluded_types, an INVALID_ARGUMENT error is returned. If a Place type is specified with multiple type
+            restrictions, only places that satisfy all of the restrictions are returned. For example, if we have
+            {included_types = ["restaurant"], excluded_primary_types = ["restaurant"]}, the returned places provide
+            "restaurant" related services but do not operate primarily as "restaurants".
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequest.LanguageCode">
+            <summary>
+            Place details will be displayed with the preferred language if available. If the language code is
+            unspecified or unrecognized, place details of any language may be returned, with a preference for English if
+            such details exist. Current list of supported languages:
+            https://developers.google.com/maps/faq#languagesupport.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequest.LocationRestriction">
+            <summary>Required. The region to search.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequest.MaxResultCount">
+            <summary>
+            Maximum number of results to return. It must be between 1 and 20 (default), inclusively. If the number is
+            unset, it falls back to the upper limit. If the number is set to negative or exceeds the upper limit, an
+            INVALID_ARGUMENT error is returned.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequest.RankPreference">
+            <summary>How results will be ranked in the response.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequest.RegionCode">
+            <summary>
+            The Unicode country/region code (CLDR) of the location where the request is coming from. This parameter is
+            used to display the place details, like region-specific place name, if available. The parameter can affect
+            results based on applicable law. For more information, see
+            https://www.unicode.org/cldr/charts/latest/supplemental/territory_language_information.html. Note that
+            3-digit region codes are not currently supported.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequestLocationRestriction">
+            <summary>The region to search.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequestLocationRestriction.Circle">
+            <summary>A circle defined by center point and radius.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyRequestLocationRestriction.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyResponse">
+            <summary>Response proto for Search Nearby. </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyResponse.Places">
+            <summary>
+            A list of places that meets user's requirements like places types, number of places and specific location
+            restriction.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchNearbyResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest">
+            <summary>Request proto for SearchText. </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest.EvOptions">
+            <summary>Optional. Set the searchable EV options of a place search request.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest.IncludedType">
+            <summary>
+            The requested place type. Full list of types supported:
+            https://developers.google.com/maps/documentation/places/web-service/place-types. Only support one included
+            type.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest.LanguageCode">
+            <summary>
+            Place details will be displayed with the preferred language if available. If the language code is
+            unspecified or unrecognized, place details of any language may be returned, with a preference for English if
+            such details exist. Current list of supported languages:
+            https://developers.google.com/maps/faq#languagesupport.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest.LocationBias">
+            <summary>
+            The region to search. This location serves as a bias which means results around given location might be
+            returned. Cannot be set along with location_restriction.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest.LocationRestriction">
+            <summary>
+            The region to search. This location serves as a restriction which means results outside given location will
+            not be returned. Cannot be set along with location_bias.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest.MaxResultCount">
+            <summary>
+            Maximum number of results to return. It must be between 1 and 20, inclusively. The default is 20. If the
+            number is unset, it falls back to the upper limit. If the number is set to negative or exceeds the upper
+            limit, an INVALID_ARGUMENT error is returned.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest.MinRating">
+            <summary>
+            Filter out results whose average user rating is strictly less than this limit. A valid value must be a float
+            between 0 and 5 (inclusively) at a 0.5 cadence i.e. [0, 0.5, 1.0, ... , 5.0] inclusively. The input rating
+            will round up to the nearest 0.5(ceiling). For instance, a rating of 0.6 will eliminate all results with a
+            less than 1.0 rating.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest.OpenNow">
+            <summary>Used to restrict the search to places that are currently open. The default is false.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest.PriceLevels">
+            <summary>
+            Used to restrict the search to places that are marked as certain price levels. Users can choose any
+            combinations of price levels. Default to select all price levels.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest.RankPreference">
+            <summary>How results will be ranked in the response.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest.RegionCode">
+            <summary>
+            The Unicode country/region code (CLDR) of the location where the request is coming from. This parameter is
+            used to display the place details, like region-specific place name, if available. The parameter can affect
+            results based on applicable law. For more information, see
+            https://www.unicode.org/cldr/charts/latest/supplemental/territory_language_information.html. Note that
+            3-digit region codes are not currently supported.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest.StrictTypeFiltering">
+            <summary>
+            Used to set strict type filtering for included_type. If set to true, only results of the same type will be
+            returned. Default to false.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest.TextQuery">
+            <summary>Required. The text query for textual search.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequestEVOptions">
+            <summary>Searchable EV options of a place search request.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequestEVOptions.ConnectorTypes">
+            <summary>
+            Optional. The list of preferred EV connector types. A place that does not support any of the listed
+            connector types are filter out.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequestEVOptions.MinimumChargingRateKw">
+            <summary>
+            Optional. Filtering places by minimum charging rate. Any places with charging a rate less than the minimum
+            charging rate are filtered out.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequestEVOptions.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequestLocationBias">
+            <summary>
+            The region to search. This location serves as a bias which means results around given location might be
+            returned.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequestLocationBias.Circle">
+            <summary>A circle defined by center point and radius.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequestLocationBias.Rectangle">
+            <summary>
+            A rectangle box defined by northeast and southwest corner. `rectangle.high()` must be the northeast point of
+            the rectangle viewport. `rectangle.low()` must be the southwest point of the rectangle viewport.
+            `rectangle.low().latitude()` cannot be greater than `rectangle.high().latitude()`. This will result in an
+            empty latitude range. A rectangle viewport cannot be wider than 180 degrees.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequestLocationBias.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequestLocationRestriction">
+            <summary>
+            The region to search. This location serves as a restriction which means results outside given location will not
+            be returned.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequestLocationRestriction.Rectangle">
+            <summary>
+            A rectangle box defined by northeast and southwest corner. `rectangle.high()` must be the northeast point of
+            the rectangle viewport. `rectangle.low()` must be the southwest point of the rectangle viewport.
+            `rectangle.low().latitude()` cannot be greater than `rectangle.high().latitude()`. This will result in an
+            empty latitude range. A rectangle viewport cannot be wider than 180 degrees.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextRequestLocationRestriction.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextResponse">
+            <summary>Response proto for SearchText. </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextResponse.Places">
+            <summary>A list of places that meet the user's text search criteria.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleMapsPlacesV1SearchTextResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleTypeDate">
+            <summary>
+            Represents a whole or partial calendar date, such as a birthday. The time of day and time zone are either
+            specified elsewhere or are insignificant. The date is relative to the Gregorian Calendar. This can represent one
+            of the following: * A full date, with non-zero year, month, and day values. * A month and day, with a zero year
+            (for example, an anniversary). * A year on its own, with a zero month and a zero day. * A year and month, with a
+            zero day (for example, a credit card expiration date). Related types: * google.type.TimeOfDay *
+            google.type.DateTime * google.protobuf.Timestamp
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleTypeDate.Day">
+            <summary>
+            Day of a month. Must be from 1 to 31 and valid for the year and month, or 0 to specify a year by itself or a
+            year and month where the day isn't significant.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleTypeDate.Month">
+            <summary>Month of a year. Must be from 1 to 12, or 0 to specify a year without a month and day.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleTypeDate.Year">
+            <summary>Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleTypeDate.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleTypeLatLng">
+            <summary>
+            An object that represents a latitude/longitude pair. This is expressed as a pair of doubles to represent degrees
+            latitude and degrees longitude. Unless specified otherwise, this object must conform to the WGS84 standard.
+            Values must be within normalized ranges.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleTypeLatLng.Latitude">
+            <summary>The latitude in degrees. It must be in the range [-90.0, +90.0].</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleTypeLatLng.Longitude">
+            <summary>The longitude in degrees. It must be in the range [-180.0, +180.0].</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleTypeLatLng.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleTypeLocalizedText">
+            <summary>Localized variant of a text in a particular language.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleTypeLocalizedText.LanguageCode">
+            <summary>
+            The text's BCP-47 language code, such as "en-US" or "sr-Latn". For more information, see
+            http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleTypeLocalizedText.Text">
+            <summary>Localized string in the language corresponding to language_code below.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleTypeLocalizedText.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.MapsPlaces.v1.Data.GoogleTypeMoney">
+            <summary>Represents an amount of money with its currency type.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleTypeMoney.CurrencyCode">
+            <summary>The three-letter currency code defined in ISO 4217.</summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleTypeMoney.Nanos">
+            <summary>
+            Number of nano (10^-9) units of the amount. The value must be between -999,999,999 and +999,999,999
+            inclusive. If `units` is positive, `nanos` must be positive or zero. If `units` is zero, `nanos` can be
+            positive, zero, or negative. If `units` is negative, `nanos` must be negative or zero. For example $-1.75 is
+            represented as `units`=-1 and `nanos`=-750,000,000.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleTypeMoney.Units">
+            <summary>
+            The whole units of the amount. For example if `currencyCode` is `"USD"`, then 1 unit is one US dollar.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.MapsPlaces.v1.Data.GoogleTypeMoney.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+    </members>
+</doc>

@@ -26,7 +26,7 @@ namespace Project5
             if (authSuccessful)
             {
                 FormsAuthentication.SetAuthCookie(Login1.UserName, false); // false to ensure the cookie is not persistent
-                Response.Redirect("~/Staff.aspx");
+                Response.Redirect("~/Page4/Staff.aspx");
             }
             else
             {

@@ -5,12 +5,21 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.MapsPlaces.v1;
+using Google.Apis.MapsPlaces.v1.Data;
+using Google.Apis.Services;
 using System.Text;
+using System.Configuration;
+
+
 
 namespace WcfService1
 {
     public class Service1 : IService1
     {
+
+
         // Service by Alexis Holland 
         public string StepsToSavings(int steps, decimal gasPrice)
 
@@ -52,5 +61,58 @@ namespace WcfService1
                 return $"An error occurred: {ex.Message}";
             }
         }
+
+        /*
+        private const string API_KEY = "AIzaSyBQQFAHZn0kNX7KvHU5yC8iEK1krxLmPyE";
+
+        public string GetNearbyPlaces(string location)
+        {
+
+            // Parse latitude and longitude from the 'location' string 
+            var coordinates = location.Split(',');
+            if (coordinates.Length != 2)
+            {
+                return "Invalid location format. Please provide as 'latitude,longitude'";
+            }
+
+            double latitude = double.Parse(coordinates[0]);
+            double longitude = double.Parse(coordinates[1]);
+
+            // Fixed Search Type and Radius
+            string type = "health_food_store";
+            int radius = 15000;
+
+            var client = new MapsPlacesService(new BaseClientService.Initializer()
+            {
+                HttpClientInitializer = GoogleCredential.GetApplicationDefault().CreateScoped(MapsPlacesService.Scope.PlaceReadonly),
+                ApiKey = API_KEY
+            });
+
+            var request = new NearbySearchRequest();
+            request.Location = new Location()
+            {
+                Latitude = latitude,
+                Longitude = longitude
+            };
+            request.Radius = radius;
+            request.Type = type;
+
+            try
+            {
+                var response = client.NearbySearch.List(request).Execute();
+
+                StringBuilder sb = new StringBuilder();
+                foreach (var place in response.Results)
+                {
+                    sb.AppendLine($"{place.Name} - {place.Vicinity}");
+                }
+
+                return sb.ToString();
+            }
+            catch (Exception ex)
+            {
+                return $"An error occurred during the Places search: {ex.Message}";
+            }
+        }*/
     }
 }

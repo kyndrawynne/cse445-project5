@@ -124,14 +124,14 @@
     </None>
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="GoogleSearch.aspx" />
-    <Content Include="InvisibleComponentTesting.aspx" />
-    <Content Include="Member.aspx" />
+    <Content Include="Page3\GoogleSearch.aspx" />
+    <Content Include="Page4\InvisibleComponentTesting.aspx" />
+    <Content Include="Page3\Member.aspx" />
     <Content Include="MemberLogin.aspx" />
     <Content Include="Signup.aspx" />
-    <Content Include="Staff.aspx" />
+    <Content Include="Page4\Staff.aspx" />
     <Content Include="StaffLogin.aspx" />
-    <Content Include="StepsToSavings.aspx" />
+    <Content Include="Page3\StepsToSavings.aspx" />
     <Content Include="Styles\site.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -153,25 +153,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="GoogleSearch.aspx.cs">
+    <Compile Include="Page3\GoogleSearch.aspx.cs">
       <DependentUpon>GoogleSearch.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GoogleSearch.aspx.designer.cs">
+    <Compile Include="Page3\GoogleSearch.aspx.designer.cs">
       <DependentUpon>GoogleSearch.aspx</DependentUpon>
     </Compile>
-    <Compile Include="InvisibleComponentTesting.aspx.cs">
+    <Compile Include="Page4\InvisibleComponentTesting.aspx.cs">
       <DependentUpon>InvisibleComponentTesting.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="InvisibleComponentTesting.aspx.designer.cs">
+    <Compile Include="Page4\InvisibleComponentTesting.aspx.designer.cs">
       <DependentUpon>InvisibleComponentTesting.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Member.aspx.cs">
+    <Compile Include="Page3\Member.aspx.cs">
       <DependentUpon>Member.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Member.aspx.designer.cs">
+    <Compile Include="Page3\Member.aspx.designer.cs">
       <DependentUpon>Member.aspx</DependentUpon>
     </Compile>
     <Compile Include="MemberLogin.aspx.cs">
@@ -189,11 +189,11 @@
     <Compile Include="Signup.aspx.designer.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Staff.aspx.cs">
+    <Compile Include="Page4\Staff.aspx.cs">
       <DependentUpon>Staff.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Staff.aspx.designer.cs">
+    <Compile Include="Page4\Staff.aspx.designer.cs">
       <DependentUpon>Staff.aspx</DependentUpon>
     </Compile>
     <Compile Include="StaffLogin.aspx.cs">
@@ -203,11 +203,11 @@
     <Compile Include="StaffLogin.aspx.designer.cs">
       <DependentUpon>StaffLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="StepsToSavings.aspx.cs">
+    <Compile Include="Page3\StepsToSavings.aspx.cs">
       <DependentUpon>StepsToSavings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="StepsToSavings.aspx.designer.cs">
+    <Compile Include="Page3\StepsToSavings.aspx.designer.cs">
       <DependentUpon>StepsToSavings.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -220,6 +220,8 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
+    <Content Include="Page3\Web.config" />
+    <Content Include="Page4\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

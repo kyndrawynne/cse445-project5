@@ -6,6 +6,7 @@ using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 
+
 namespace WcfService1
 {
     [ServiceContract]
@@ -17,5 +18,9 @@ namespace WcfService1
 
         [OperationContract]
         string GoogleSearch(string query);
+
+      /*  [OperationContract]
+        string GetNearbyPlaces(string location);
+      */
     }
 }
